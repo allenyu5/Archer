@@ -6,6 +6,7 @@ public class SortTest {
 	public static void main(String[] args) {
 		quickSortTest(getSampleDataArray());
 		heapSortTest(getSampleDataArray());
+		shellSortTest(getSampleDataArray());
 	}
 	
 	private static void quickSortTest(int[] data) {
@@ -24,6 +25,12 @@ public class SortTest {
 		SortUtil.displayArray(data);
 		System.out.println("Test for Heap test!");
 		SortUtil.displayArray(HeapSort.heapSort(data));
+	}
+	
+	private static void shellSortTest(int[] data) {
+		SortUtil.displayArray(data);
+		System.out.println("Test for Shell test!");
+		SortUtil.displayArray(ShellSort.sort(data));
 	}
 
 }
