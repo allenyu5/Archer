@@ -4,6 +4,11 @@ public class TreeNode {
 	private NodeData data;
 	private TreeNode leftTreeNode;
 	private TreeNode righTreeNode;
+	private int value;
+	
+	public TreeNode(int value) {
+		this.value = value;
+	}
 
 	public NodeData getData() {
 		return data;
@@ -27,6 +32,14 @@ public class TreeNode {
 
 	public void setRighTreeNode(TreeNode righTreeNode) {
 		this.righTreeNode = righTreeNode;
+	}
+
+	public int getValue() {
+		return value;
+	}
+
+	public void setValue(int value) {
+		this.value = value;
 	}
 
 }
